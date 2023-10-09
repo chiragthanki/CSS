@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Display Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div[class*="box"] {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: teal;
+        }
+
+        /* X-Large devices (large desktops, less than 1400px) */
+        @media (max-width: 1399.98px) {
+            .container {
+            border: 1px solid red;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px) */
+        @media (max-width: 991.98px) {
+            .container {
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            }
+    
+        }
+
+        /* X-Small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            .container {
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Display Flex</h1>
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-3">Box-3</div>
+    </div>
+</body>
+
+</html>
