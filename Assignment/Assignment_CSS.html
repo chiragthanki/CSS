@@ -11,12 +11,14 @@
         p {
             /* color: white; */
             font-size: 20px;
-            text-align: justify;
+            text-align:start;
+            /* margin: 2px; */
+            /* padding: 2px; */
         }
 
         body {
             background-color: #fee851;
-            border: 2px solid blue;
+            border: 2px solid black;
             /* width:fit-content;  By default width is: fit-content*/
         }
 
@@ -80,158 +82,197 @@
 
         <h3>Q. What is the difference between CSS2 and CSS3?</h3>
         <p>Ans.
-            <table>
-                <thead>
-                    <tr>
-                        <th>CSS2</th>
-                        <th>CSS3</th>
-                    </tr>
-                </thead>
+        <table>
+            <thead>
                 <tr>
-                    <td>CSS2 is capable of positioning texts and objects.</td>
-                    <td>On the other hand, CSS3 is capable of making the web page more attractive and takes less time to
-                        create. CSS3 is backward compatible with CSS2.</td>
+                    <th>CSS2</th>
+                    <th>CSS3</th>
                 </tr>
-                <tr>
-                    <td>Responsive designing is not supported in CSS2</td>
-                    <td>CSS3 is the latest version, hence it supports responsive design.</td>
-                </tr>
-                <tr>
-                    <td>CSS2 cannot be split into modules.</td>
-                    <td>Whereas CSS3 can be breakdown into modules.</td>
-                </tr>
-                <tr>
-                    <td>CSS2 is very slow as compared to CSS3</td>
-                    <td>CSS3 is faster than CSS.</td>
-                </tr>
-                <tr>
-                    <td>Using CSS, we cannot build 3D animation and transformation.</td>
-                    <td>But in CSS3 we can perform all kinds of animation and transformations as it supports animation
-                        and 3D transformations.</td>
-                </tr>
-                <tr>
-                    <td>In CSS2 we have set of standard colors and it uses basic color schemes only.</td>
-                    <td>Whereas CSS3 has a good collection of HSL RGBA, HSLA, and gradient colors.</td>
-                </tr>
-                <tr>
-                    <td>CSS2 does not support media queries.</td>
-                    <td>But CSS3 supports media queries</td>
-                </tr>
-                <tr>
-                    <td>CSS2 codes are not supported by all types of modern browsers.</td>
-                    <td>Being the latest version, CSS3 codes are supported by all modern browsers.</td>
-                </tr>
-                <tr>
-                    <td>CSS is memory intensive.</td>
-                    <td>CSS3 memory consumption is low as compared to CSS2.</td>
-                </tr>
-            </table>
+            </thead>
+            <tr>
+                <td>CSS2 is capable of positioning texts and objects.</td>
+                <td>On the other hand, CSS3 is capable of making the web page more attractive and takes less time to
+                    create. CSS3 is backward compatible with CSS2.</td>
+            </tr>
+            <tr>
+                <td>Responsive designing is not supported in CSS2</td>
+                <td>CSS3 is the latest version, hence it supports responsive design.</td>
+            </tr>
+            <tr>
+                <td>CSS2 cannot be split into modules.</td>
+                <td>Whereas CSS3 can be breakdown into modules.</td>
+            </tr>
+            <tr>
+                <td>CSS2 is very slow as compared to CSS3</td>
+                <td>CSS3 is faster than CSS.</td>
+            </tr>
+            <tr>
+                <td>Using CSS, we cannot build 3D animation and transformation.</td>
+                <td>But in CSS3 we can perform all kinds of animation and transformations as it supports animation
+                    and 3D transformations.</td>
+            </tr>
+            <tr>
+                <td>In CSS2 we have set of standard colors and it uses basic color schemes only.</td>
+                <td>Whereas CSS3 has a good collection of HSL RGBA, HSLA, and gradient colors.</td>
+            </tr>
+            <tr>
+                <td>CSS2 does not support media queries.</td>
+                <td>But CSS3 supports media queries</td>
+            </tr>
+            <tr>
+                <td>CSS2 codes are not supported by all types of modern browsers.</td>
+                <td>Being the latest version, CSS3 codes are supported by all modern browsers.</td>
+            </tr>
+            <tr>
+                <td>CSS is memory intensive.</td>
+                <td>CSS3 memory consumption is low as compared to CSS2.</td>
+            </tr>
+        </table>
         </p>
         <hr>
 
-        <h3>Q. What are HTML Entities?</h3>
-        <p>Ans. An HTML entity is a piece of text ("string") that begins with an ampersand (&) and ends with a semicolon
-            (;).</p>
+        <h3>Q. Name a few CSS style components</h3>
+        <p>Ans.
+        <ul class="ul">
+            <li>Selector: class name, id name or element name that is target</li>
+            <li>Attribute: name of the attribute you want to style for example border, color,background, position etc.
+            </li>
+            <li>Value of Property: value that will be assigned to attribute.</li>
+        </ul>
+        </p>
         <hr>
 
-        <h3>Q. What are different types of lists in HTML?</h3>
-        <p>Ans. UL(Unordered List) and OL(Ordered List).</p>
+        <h3>Q. What do you understand by CSS opacity?</h3>
+        <p>Ans. The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind
+            an element is hidden, and is the opposite of transparency.</p>
         <hr>
 
-        <h3>Q. What is the 'class' attribute in HTML?</h3>
-        <p>Ans. The class attribute specifies one or more classnames for an element. The class attribute is mostly used
-            to point to a class in a style sheet.</p>
+        <h3>Q. How can the background color of an element be changed?</h3>
+        <p>Ans. To change the background-color of any element, just give style to it as below. <br> <br>
+            &emsp;element(tag) name <br>
+            &emsp;{ <br>
+            &emsp;&emsp;background-color: color-name; <br>
+            &emsp;}</p>
         <hr>
 
-        <h3>Q. What is the difference between the 'id' attribute and the 'class' attribute of HTML elements?</h3>
-        <p>Ans. A Class name can be used by multiple HTML elements, while an ID name must only be used by one HTML
-            element within the page.</p>
+        <h3>Q. How can image repetition of the background be controlled?</h3>
+        <p>Ans. To control the background repetition, we can use <strong>background-repeat</strong> property. </p>
         <hr>
 
         <h3>Q. What are the various formatting tags in HTML?</h3>
-        <p>Ans. &lt;b&gt; To Bold text <br>
-            &lt;strong&gt; Same as &lt;b&gt; For SEO Purpose, we use &lt;strong&gt;<br>
-            &lt;i&gt; To Italic the text <br>
-            &lt;em&gt; Same as &lt;i&gt; For SEO purpose, we use &lt;em&gt;-emphasis <br>
-            &lt;u&gt; To underline the text <br>
-            &lt;ins&gt; Same as &lt;u&gt; For SEO purpose, we use &lt;u&gt;-underline
+        <p>Ans. -The background-position property takes two values: the horizontal position and the vertical
+            position. These values can be specified in different units, such as pixels, percentages, or keywords
+            like "top", "bottom", "left", and "right". <br> <br>
+            —The background-position property in CSS is mainly used to sets the initial position for the
+            background image.
         </p>
         <hr>
 
-        <h3>Q. How is Cell Padding different from Cell Spacing?</h3>
-        <p>Ans. Cell padding is the space between the cell edges and the cell content. By default the padding is set to
-            0. To add padding on table cells, use the CSS padding property. <br>
-            Cell spacing is the space between each cell. By default the space is set to 2 pixels. To change the space
-            between table cells, use the CSS border-spacing property on the table element
+        <h3>Q. Which property controls the image scroll in the background?</h3>
+        <p>Ans. -The "background-attachment" property can take two values: "scroll" and "fixed". <br><br>
+            &emsp;-body { <br>
+            &emsp;&emsp;background-image: url('image.jpg'); <br>
+            &emsp;&emsp;background-attachment: fixed; <br>
+            &emsp;}
         </p>
         <hr>
 
-        <h3>Q. How can we club two or more rows or columns into a single row or column in an HTML table?</h3>
-        <p>Ans. Use the colspan and rowspan attributes to merge cells in HTML.</p>
-        <hr>
-
-        <h3>Q. What is the difference between a block-level element and an inline element?</h3>
-        <p>Ans. Block elements always start from a new line. <br>
-            Block element occupies full width. <br>
-            While Inline elements never start from a new line. Inline element does not occupy full width.
+        <h3>Q. Why should background and color be used as separate properties?</h3>
+        <p>Ans. -The background and color properties are used to define the background color and text color of an HTML
+            element, respectively. While it is possible to use the background-color property to set both the background
+            color and text color of an element, it is generally recommended to use the background property for setting
+            the background color and other related properties such as background-image, background-repeat, etc.
+            separately <br> <br>
+            -Using separate properties for background and color makes the style sheet more legible and easier to
+            maintain. The background property is complex in itself, and combining it with the color property can make it
+            even more complex.
         </p>
         <hr>
 
-        <h3>Q. How to create a Hyperlink in HTML?</h3>
-        <p>Ans. Use the &lt;a href=""&gt; element to define a link. Here &lt;a&gt; is Anchor Tag <br>
-            Use the href attribute to define the link address.
+        <h3>Q. How to center block elements using CSS1?</h3>
+        <p>Ans. <br> &emsp;element selector { <br>
+            &emsp;&emsp;width: 50%; <br>
+            &emsp;&emsp;margin: 0 auto; <br>
+            &emsp;&emsp;text-align: center; <br>
+            &emsp;}
         </p>
         <hr>
 
-        <h3>Q. What is the use of an iframe tag?</h3>
-        <p>Ans. The &lt;iframe&gt; tag specifies an inline frame. An inline frame is used to frame another document
-            within the current HTML document.</p>
-        <hr>
-
-        <h3>Q. What is the use of a span tag?</h3>
-        <p>Ans. The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document.
+        <h3>Q. How to maintain the CSS specifications?</h3>
+        <p>Ans. The Specification defines how CSS properties should be implemented by browser vendors along with
+            detailed algorithms, code samples and tabular information. <br><br>
+            The Specification also include:
+        <ul class="ul">
+            <li>The syntax and data types of the language</li>
+            <li>Detailed explanation on CSS Selectors</li>
+            <li> How you can assign values to properties</li>
+            <li> The Cascade (the "C" in CSS)</li>
+            <li>How inheritance works</li>
+            <li>The Box Model e.t.c</li>
+        </ul>
         </p>
         <hr>
 
-        <h3>Q. How to insert a picture into a background image of a web page?</h3>
-        <p>Ans. To set the background image of a webpage, use the CSS style. Under the CSS &lt;style&gt; tag, add the
-            property background-image.</p>
-        <hr>
-
-        <h3>Q. How are active links different from normal links?</h3>
-        <p>Ans. An unvisited link is underlined and blue. A visited link is underlined and purple. An active link is
-            underlined and red.</p>
-        <hr>
-
-        <h3>Q. What are the different tags to separate sections of text?</h3>
-        <p>Ans. &lt;br&gt; tag - It is used to separate the line of text. It breaks the current line and shifts the flow
-            of the text to a new line.
-            &lt;p&gt; tag - This tag is used to write a paragraph of text.
-            &lt;blockquote&gt; tag - This tag is used to define large quoted sections. Browsers usually indent elements
-            in &lt;blockquote> tag.
+        <h3>Q. What are the ways to integrate CSS as a web page?</h3>
+        <p>Ans. There are three ways to integrate CSS into a web page:
+        <ul class="ul">
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External</li>
+        </ul>
         </p>
         <hr>
 
-        <h3>Q. What is SVG?</h3>
-        <p>Ans. SVG - Scalable Vector Graphics <br>
-            The SVG file format is a popular tool for displaying two-dimensional graphics, charts, and illustrations on
-            websites. <br>
-            It is high resolution graphic that won't distort upon zooming.
+        <h3>Q. What is embedded style sheets?</h3>
+        <p>Ans. Embedded style sheets are a type of style sheet that allow you to define styles for the whole HTML
+            document in one place. <br> <br> This is done by embedding the style sheet information within tags in the head of
+            your document. <br><br>
+            Embedded style sheets are also known as internal style sheets1.
         </p>
         <hr>
 
-        <h3>Q. What is difference between HTML and XHTML?</h3>
-        <p>Ans. HTML is the standard mark-up language for creating web pages, while XHTML is a stricter and more
-            standardized version of HTML.</p>
+        <h3>Q. What are the external style sheets?</h3>
+        <p>Ans. External style sheets are CSS written separately and then linked to the HTML document using &lt;link&gt; tag.</p>
         <hr>
 
-        <h3>Q. What are logical and physical tags in HTML?</h3>
-        <p>Ans. Physical Tags are used in HTML to provide actual physical formatting to the text.
-            e.g. &lt;b&gt;, &lt;strong&gt;, &lt;i&gt;, &lt;em&gt;, &lt;u&gt;, &lt;ins&gt;, &lt;del&gt;, &lt;strike&gt;
-            Logical Tags are used in HTML to display the text according to the logical styles.
-            e.g. &lt;pre&gt;, &lt;address&gt;
+        <h3>Q. What are the advantages and disadvantages of using external style sheets?</h3>
+        <p>Ans. <ul class="ul"> <b>Advantages</b>
+            <li>With the help of External Style Sheets, the styles of numerous documents can be organized from 
+                one single file.</li>
+            <li>Classes can be created for use on multiple HTML element types in many documents.</li>
+            <li>In complex situations, selector and grouping methods can be used to apply styles.</li>
+        </ul>
+        <ul class="ul"> <b>Disadvantages</b>
+            <li>In order to import style information for each document, an extra download is needed.</li>
+            <li>Until the external style sheet is loaded, it may not be possible to render the document.</li>
+            <li>For small number of style definitions, it is not viable</li>
+        </ul>
+    </p>
+        <hr>
+
+        <h3>Q. What is the meaning of the CSS selector?</h3>
+        <p>Ans.In CSS, selectors are used to target the HTML elements on our web pages that we want to style.
         </p>
-    </blockquote>
+        <hr>
+
+        <h3>Q. What are the media types allowed by CSS?</h3>
+        <p>Ans. There are 3 media types allowed in CSS.
+            <ul class="ul">
+                <li>1. All - Suitable for all devices.</li>
+                <li>2. Print - Intended for paged material and documents viewed on a screen in print preview mode.</li>
+                <li>3. Screen - Intended primarily for screens.</li>
+            </ul>
+        </p>
+        <hr>
+
+        <h3>Q. What is the rule set?</h3>
+        <p>Ans. Ruleset - Simply put a ruleset (also called rule) is the combination of a selector and a declaration block, a propety & ita value. <br><br>
+            <img src="../Assignment/ruleset-visual.png" alt="Image" width="500px" height="300px">
+        </p>
+        <hr>
+
+        <h3>Q. Create Layout</h3>
+        <p>On the other file.....</p>
 </body>
 
 </html>
