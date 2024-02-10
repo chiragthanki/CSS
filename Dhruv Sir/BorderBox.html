@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Box</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        color: white;
+        border: 5px solid red;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+
+        /* Different Types of Borders */
+        border-top: 5px dashed green;
+        border-left: 5px dotted blue;
+        border-right: 10px ridge yellow;
+        border-bottom: 5px double pink;
+
+        /* Border radius is used to give curve at the end. */
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <div class="box">
+        I'm a Box
+    </div>
+</body>
+
+</html>
