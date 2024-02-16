@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .box {
+        margin: 20px auto;
+        height: 500px;
+        width: 900px;
+        /* text-align: center; */
+        background-color: teal;
+        border: 30px solid red;
+        border-image: url(./Assets/border-flower.jpg) 100 round;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* p {
+        text-align: center;
+        margin-top: 250px;
+    } */
+</style>
+
+<body>
+    <div class="box">
+        <p>HELLO EVERYONE. I'm Border Style!</p>
+    </div>
+</body>
+
+</html>

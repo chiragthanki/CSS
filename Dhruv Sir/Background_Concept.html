@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            /* For perfect full screen without scroll, we use viewport width(vw) and viewport height(vh) */
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid red;
+            background-image: url(./Assets/bgimage.jpg);
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+
+            /* To align text in paragraph to the center, we will use display flex property as below */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p>Concept of Viewport Width & Height</p>
+    </div>
+
+</body>
+
+</html>
