@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Background Concept</title>
     <style>
         * {
             margin: 0;
@@ -14,12 +14,13 @@
 
         .main {
             /* For perfect full screen without scroll, we use viewport width(vw) and viewport height(vh) */
-            width: 100vw;
+            width: auto;
             height: 100vh;
-            border: 2px solid red;
-            background-image: url(./Assets/bgimage.jpg);
+            /* border: 2px solid red; */
+            background-image: url(Assets/space.avif);
             background-size: cover;
-            /* background-repeat: no-repeat; */
+            background-repeat: no-repeat;
+            /* background-position: bottom; Why bg aligns center when given bottom property */
 
             /* To align text in paragraph to the center, we will use display flex property as below */
             display: flex;
@@ -41,3 +42,5 @@
 </body>
 
 </html>
+
+<!-- Q. Backgroud is cutting. If we want full background stretched to screem, then what to do? -->

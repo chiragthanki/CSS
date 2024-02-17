@@ -1,0 +1,3 @@
+Use of absolute relative position: When we want to overwrite one object on the other, concept of position relative and alsolute comes in picture.
+
+Parent always take "Position: Relative;" while child gets "Position: absolute;".
