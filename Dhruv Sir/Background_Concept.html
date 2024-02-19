@@ -16,11 +16,21 @@
             /* For perfect full screen without scroll, we use viewport width(vw) and viewport height(vh) */
             width: auto;
             height: 100vh;
-            /* border: 2px solid red; */
-            background-image: url(Assets/space.avif);
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* background-position: bottom; Why bg aligns center when given bottom property */
+            border: 5px solid blue;
+            background-image: url(./Assets/4k-money-heist-season-4-netflix-aw-1920x1080.jpg);
+            background-size: 300px 200px;
+            /*First for width, second for height*/
+
+            /* background-size: 100vw 100vh; */
+            /*Used to stretch the image upto full viewport*/
+            background-size: 100% 100%;
+            /*Percentages also work*/
+
+            /* background-size: contain; */
+
+            /* background-repeat: space; */
+            /* background-position: accepts two values: one for horizontal(X-Axis), other for vertical (Y-Axis)
+            /* background-position: bottom left; */
 
             /* To align text in paragraph to the center, we will use display flex property as below */
             display: flex;
@@ -30,6 +40,7 @@
 
         p {
             font-size: 32px;
+            color: white;
         }
     </style>
 </head>
@@ -44,3 +55,16 @@
 </html>
 
 <!-- Q. Backgroud is cutting. If we want full background stretched to screem, then what to do? -->
+<!-- A. background-size: 300px 200px;
+        First for width, second for height
+
+        background-size: 100vw 100vh;
+        Used to stretch the image upto full viewport
+
+        background-size: 100% 100%;
+        Percentages also work, Used to stretch the image 100% to its parent.
+
+        background-size: contain;
+        Contain resize the image without distortion/ without compromize in aspect ratio.
+
+    -->
