@@ -26,7 +26,7 @@
         }
 
         #main {
-            border: 2px solid;
+            border: 2px solid black;
             background-color: teal;
             color: khaki;
             height: 500px;
@@ -37,10 +37,21 @@
         }
 
         #count {
+            /* display: inline-block; */
             position: relative;
+            position: absolute;
+            border: 2px solid black;
+            height: 300px;
+            width: 500px;
         }
 
-        #sub {
+        .subb {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        /* #sub {
             border: 2px solid;
             background-color: gray;
             color: tomato;
@@ -49,10 +60,11 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            display: flex;
+            margin-left: 80px;
+            /* display: flex;
             justify-content: center;
-            align-items: center;
-        }
+            align-items: center; */
+
 
         .footer {
             background-color: black;
@@ -77,10 +89,8 @@
         </div>
     </div>
     <div id="main">
-        <p id="count">Main-Box
-        <div id="sub">
-            <p>Sub-Box</p>
-        </div>
+        <p id="count">
+        <div class="subb"></div>
         </p>
 
     </div>
