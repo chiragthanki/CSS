@@ -25,45 +25,52 @@
             position: relative;
         }
 
-        #main {
+        .container {
             border: 2px solid black;
             background-color: teal;
             color: khaki;
             height: 500px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-size: 32px;
+            /* position: relative; */
         }
 
-        #count {
-            /* display: inline-block; */
-            position: relative;
-            position: absolute;
-            border: 2px solid black;
+        .main-box {
             height: 300px;
-            width: 500px;
+            border: 2px solid black;
+            width: 60%;
+            background-color: lightcoral;
+            margin: auto auto;
+            position: relative;
+            text-align: center;
         }
 
-        .subb {
-            height: 100px;
+        .sub-box {
             width: 100px;
-            background-color: red;
+            height: 100px;
+            border: 2px solid black;
+            font-size: 20px;
+            background-color: lightslategrey;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            /* margin-right: 20px;
+            margin-bottom: 10px;
+            text-align: left; */
+
         }
 
-        /* #sub {
-            border: 2px solid;
-            background-color: gray;
-            color: tomato;
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            margin-left: 80px;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
+        .header {
+            text-align: center;
+        }
+
+        .text {
+            margin-top: 82px;
+            margin-left: -175px;
+        }
+
+        .main-box-text {
+            text-decoration: underline;
+        }
 
 
         .footer {
@@ -88,16 +95,22 @@
             I'm the other sibling element.
         </div>
     </div>
-    <div id="main">
-        <p id="count">
-        <div class="subb"></div>
-        </p>
-
+    <div class="container">
+        <p class="header">Container</p>
+        <div class="main-box">
+            <p class="main-box-text">Main-Box</p>
+            <div class="sub-box">
+                <p class="text">Sub-Box</p>
+            </div>
+        </div>
     </div>
 
     <footer>
         <div class="footer">
             <p>Q. What if I want to position Sub-Box relative to Main-Box text that is in the center?</p>
+            <p>A. To do that, first define Main-Box, then define sub-box as its child. Then to position sub-box relative
+                to main-box, we give parent (Main-Box) the "position: relative" and to child (Sub-Box) the "position:
+                absolute" with top, left, right, bottom values...</p>
         </div>
     </footer>
 </body>
