@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first_last_child concept</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+
+        p:first-child {
+            color: blue;
+        }
+
+        p:last-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>First-Child</p>
+    <p>Para-2</p>
+    <p>Para-3</p>
+    <p>Para-4</p>
+    <!-- <p>Para-5</p>  This is not the last-child -->
+
+    <div class="main">
+        <p>Main-Div- First-Child</p>
+        <p>Main-Div- Para-2</p>
+        <p>Main-Div- Para-3</p>
+        <p>Main-Div- Para-4</p>
+        <p>Main-Div- Para-5 (last Child of "main" div)</p>
+    </div>
+
+    <div class="second">
+        <p>Second Div- First-Child</p>
+        <p>Second Div- Para-2</p>
+        <p>Second Div- Para-3</p>
+        <p>Second Div- Para-4</p>
+        <p>Second Div- Para-5 (last Child of "second" div)</p>
+    </div>
+    <p>Last-child (last Child of "body")</p>
+    <!-- This is the last child of "p" element. -->
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth_Child</title>
+    <style>
+        body {
+            background-color: lightslategray;
+        }
+
+        p:nth-child(4) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Child-1</p>
+    <p>Child-2</p>
+    <p>Child-3</p>
+    <p>Child-4</p>
+    <p>Child-5</p>
+
+    <!-- Note: Div is also counted as a child of the body -->
+    <div>
+        <p>Child-1</p>
+        <p>Child-2</p>
+        <p>Child-3</p>
+        <!-- <p>Child-4</p> -->
+        <!-- <p>Child-5</p> -->
+        <!-- <p>Child-6</p> -->
+    </div>
+
+    <p>Child-6</p>
+</body>
+
+</html>
