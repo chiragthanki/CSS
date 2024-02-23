@@ -8,17 +8,99 @@
     <style>
         .container {
             width: 100px;
-            height: 100px;
+            height: 150px;
             border: 2px solid black;
+            /* word-wrap: normal; Default */
+            word-wrap: break-word;
+            /* word-break: normal; Default */
+            word-break: keep-all;
+            word-break: break-all;
+            /* word-break: break-all; This property is used when we want to fit the text in the container by breaking all words. */
+        }
+
+        .main {
+            width: 185px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: lightslategray;
+
+        }
+
+        /* .sub {
             word-wrap: break-word;
             word-break: break-all;
+        } */
+
+        /* NOTE: Here, we got to know that this "word-break" property applies only container/div/parent. Here, we've given this property to element inside a div and got to know that it doesn't change anything. */
+
+        /* So, we are giving word-wrap property to parent container. i.e. .main div as below */
+
+        .main {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        table,
+        td {
+            border: 2px solid black;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        caption {
+            caption-side: top;
+            /* Position the caption above the table */
+            text-align: center;
+            /* Align the caption text */
+            padding-bottom: 10px;
+            /* Add some spacing below the caption */
+            font-weight: bold;
+            /* Make the caption text bold */
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <p>This is veryyyyyyyylonggggggggggg long word. English</p>
+        <p>This is veryyyyyyyylonggggggggggg longlonglong woooooord. This is an English Language.</p>
+    </div>
+    <br>
+    <hr><br>
+    <div class="flex">
+        <div class="main">
+            <p class="sub">This is an English Language aaaaaaaaannnnnnnnnnnnnnddddddddddddddddddd word is going to break
+                when "English" comes.</p>
+        </div>
+        <p>Here, word-break property works as "English" stays in the same line. But if we comment out
+            "word-break:
+            break-all", then "English" will come in new line.</p>
+
+        <table>
+            <caption>Difference Between Word-Wrap and Word-Break</caption>
+            <tr>
+                <td>Word-Wrap</td>
+                <td>Word-Break</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <ul>
+                        <li>Word-Wrap only breaks long word and it keeps the text in the box area.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>While Word-Break breaks all words and it utilizes maximum space available effectively.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
 
