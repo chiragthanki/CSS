@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter_Image</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+
+        /* NOTE: FILTER - VALUES CAN BE IN (%) OR (Px) OR (0-1) */
+        /* filter: blur(5px); */
+        filter: brightness(70px);
+        filter: contrast(400%);
+        filter: grayscale(500%);
+        filter: hue-rotate(15deg);
+        /* filter: opacity(0.5); value (0-1) */
+        filter: saturate(30%);
+        filter: sepia(50%);
+        filter: invert(30%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="../Assets/Oggy.jpg" alt="" />
+    </div>
+    <p style="font-size: 20px">
+      - Load different images and give container display flex property and then
+      wrap it.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        background-color: lightcoral;
+        box-shadow: 20px 20px 5px red;
+        margin-bottom: 30px;
+      }
+      .text p {
+        font-size: 50px;
+        text-shadow: 5px 5px 5px red;
+        margin-bottom: 30px;
+      }
+      .drop img {
+        width: 300px;
+        height: 300px;
+        margin: 50px;
+        /* mix-blend-mode: darken; */
+        filter: drop-shadow(20px 20px 10px red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ol>
+        <li>Box Shadow</li>
+        <li>Text Shadow</li>
+        <li>Drop Shadow</li>
+      </ol>
+
+      <div class="box"></div>
+      <!-- <hr /> -->
+      <div class="text">
+        <p>Chigs Thanky</p>
+      </div>
+      <!-- <hr /> -->
+      <div class="drop">
+        <img src="../Assets/Doraemon.jpg" alt="" />
+        <img src="../Assets/circle-linkedin-512.webp" alt="" />
+        <img src="../Assets/Amazon_icon.svg.png" alt="" />
+        <img src="../Assets/1691341316Warrior3a.svg" alt="" />
+        <img src="../Assets/SpiderMan.png" alt="" />
+        <img src="../Assets/safe-and-stable-svgrepo-com.svg" alt="" />
+        <img src="../Assets/JesusChrist2.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
