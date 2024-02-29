@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        height: 500px;
+        width: 500px;
+        border: 2px solid;
+        background-image: radial-gradient(
+          closest-corner at 20% 20%,
+          red,
+          green,
+          blue
+        );
+        background-image: radial-gradient(
+          closest-side at 20% 20%,
+          red,
+          green,
+          blue
+        );
+        background-image: radial-gradient(
+          farthest-corner at 20% 20%,
+          red,
+          green,
+          blue
+        );
+        background-image: radial-gradient(
+          farthest-side at 20% 20%,
+          red,
+          green,
+          blue
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main"></div>
+  </body>
+</html>
