@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      .main {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        background-color: aqua;
+        margin: 50px auto;
+        transform: rotateX(30 deg);
+        transform: rotateY(60 deg);
+        transform: rotateZ(90 deg);
+        transform: rotate(30deg);
+        transform: rotate(-10deg);
+      }
+      .main1 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        background-color: aqua;
+        margin: 50px auto;
+        transform: rotateZ(30deg);
+        transform: skew(10deg, 20deg);
+        /* transform: skew(50deg); */
+        /* transform: skewX(50deg); */
+        /* transform: skewY(50deg); */
+      }
+      .scale {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        background-color: aqua;
+        transform: scale(1.5); /*1 and half of the original value*/
+        transform: scaleX(0.5);
+        transform: scaleY(0.6);
+      }
+      .translate {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        background-color: brown;
+        /* translate(x-axis, y-axis)*/
+        transform: translate(20px, 90px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, totam
+      dolorum. Tempore repudiandae consequatur officia, aspernatur iure magnam
+      sint doloribus dignissimos et id ipsum vel hic, laborum, illo autem.
+      Temporibus!
+    </div>
+    <div class="main1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, totam
+      dolorum. Tempore repudiandae consequatur officia, aspernatur iure magnam
+      sint doloribus dignissimos et id ipsum vel hic, laborum, illo autem.
+      Temporibus!
+    </div>
+    <div class="scale">Scale</div>
+    <div class="translate">translate</div>
+  </body>
+</html>
