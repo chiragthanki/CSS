@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        .main {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: xyz;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-direction: reverse;
+            animation-direction: alternate;
+            /* Only works when iteration count is more than 1 */
+            animation-iteration-count: 2;
+
+        }
+
+        @keyframes xyz {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            /* This won't affect the result if you comment out. */
+
+
+            25% {
+                background-color: aqua;
+                top: 0;
+                left: 250px;
+            }
+
+            50% {
+                background-color: burlywood;
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                background-color: cadetblue;
+                top: 250px;
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+</body>
+
+</html>

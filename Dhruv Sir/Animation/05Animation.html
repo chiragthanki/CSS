@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        div {
+            width: 150px;
+            height: 50px;
+            background-color: lightblue;
+            color: red;
+            margin-bottom: 20px;
+            position: relative;
+            animation-name: animationtimingfunction;
+            animation-duration: 10s;
+            /* animation-fill-mode: backwards; */
+        }
+
+        #a {
+            animation-timing-function: linear;
+        }
+
+        #b {
+            animation-timing-function: ease;
+        }
+
+        #c {
+            animation-timing-function: ease-in;
+        }
+
+        #d {
+            animation-timing-function: ease-out;
+        }
+
+        #e {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes animationtimingfunction {
+            from {
+                left: 0
+            }
+
+            to {
+                left: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">Linear</div>
+    <div id="b">Ease</div>
+    <div id="c">Ease-In</div>
+    <div id="d">Ease-Out</div>
+    <div id="e">Ease-In-Out</div>
+</body>
+
+</html>

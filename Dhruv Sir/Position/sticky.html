@@ -30,7 +30,7 @@
             border: 2px solid black;
             background-color: rgb(17, 211, 27);
             font-size: 32px;
-            /* position: relative; */
+            position: relative;
             display: flex;
             justify-content: flex-end;
         }
@@ -54,11 +54,20 @@
             padding: 5px;
             position: sticky;
             top: 30px;
+            /* right: 10px; */
         }
 
         p {
             font-size: 24px;
             background-color: white;
+        }
+
+        #para {
+            font-size: 32px;
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
@@ -66,7 +75,8 @@
 <body>
     <div class="main">
         <div class="sibling-1">Sibling-1</div>
-        <div class="sibling-2">Sibling-2
+        <div class="sibling-2">
+            <p id="para">Sibling-2</p>
             <div class="sticky">Sticky</div>
         </div>
         <div class="sibling-3">Sibling-3</div>
