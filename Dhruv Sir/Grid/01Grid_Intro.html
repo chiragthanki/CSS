@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        .container {
+            /* width: 500px;
+            height: 500px; */
+            border: 2px solid black;
+            background-color: red;
+            display: grid;
+            display: inline-grid;
+            /* Note: Cover's area according to padding */
+            grid-template-columns: auto auto auto;
+            column-gap: 10px;
+            row-gap: 10px;
+            /* gap: row-gap column-gap; */
+            gap: 10px 5px;
+            /*gap: row column; */
+            gap: 15px;
+            /*Both row & column*/
+        }
+
+        .grid-item {
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 20px;
+            font-size: 30px;
+            display: grid;
+            align-items: center;
+            /* text-align: center; */
+            justify-content: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-item grid-1">1</div>
+        <div class="grid-item grid-2">2</div>
+        <div class="grid-item grid-3">3</div>
+        <div class="grid-item grid-4">4</div>
+        <div class="grid-item grid-5">5</div>
+        <div class="grid-item grid-6">6</div>
+        <div class="grid-item grid-7">7</div>
+        <div class="grid-item grid-8">8</div>
+        <div class="grid-item grid-9">9</div>
+    </div>
+</body>
+
+</html>
